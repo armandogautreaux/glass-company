@@ -40,7 +40,7 @@ h4 {
   font-size: 7px;
   position: absolute;
   top: 57px;
-  left: 140px;
+  left: 40px;
 
   color: #c0b283 !important;
 }
@@ -74,6 +74,10 @@ a:hover {
   color: #000000 !important;
   font-size: 0.8rem;
   margin-left: 5px;
+}
+
+.fa-bars {
+  color: black;
 }
 
 .quick-access {
@@ -125,6 +129,8 @@ a:hover {
 .text-link > a:hover {
   color: #ffffff;
 }
+.fa-facebook-square:hover,
+.fa-envelope:hover,
 .link-custom:hover,
 .text-inner > a:hover {
   color: #c0b283;
@@ -134,6 +140,9 @@ a:hover {
 .text-link > a {
   color: #000000;
   font-weight: bold;
+}
+.link-custom {
+  font-size: 0.9rem;
 }
 .name {
   color: #c0b283;
@@ -156,22 +165,19 @@ a:hover {
 .second-nav {
   background: #ffffff;
   border-bottom: 1px solid lightgray;
+  z-index: auto;
 }
 
 #home-section {
   background: url('../images/bathroom.jpg') no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 700px;
-}
-.first-container {
-  position: absolute;
-  width: 100%;
+  min-height: 500px;
 }
 
-.home-inner {
-  padding-top: 150px;
-}
+/* .home-inner {
+  padding-top: 10px;
+} */
 .banner {
   background: #c0b283e3;
 }
@@ -182,7 +188,6 @@ a:hover {
   letter-spacing: 0.8px;
   color: #000000;
   text-transform: uppercase;
-  padding-left: 3rem;
 }
 .bottom-nav > .nav-item > .nav-link:hover {
   color: #c0b283 !important;
@@ -190,7 +195,7 @@ a:hover {
 
 .dark-overlay {
   background-color: #ffffff2a;
-  min-height: 700px;
+  min-height: 500px;
   /* position: absolute;
   top: 0;
   left: 0; */
@@ -204,6 +209,10 @@ li {
 }
 .footer {
   background: #222222;
+}
+
+.thumbs {
+  margin-top: 2rem;
 }
 
 .ul-footer {
@@ -283,7 +292,7 @@ li {
 
 .thumbnail > img {
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   text-align: center;
 }
 .banner-2 {
@@ -315,7 +324,6 @@ li {
 
 /* ----- CONTACT ---- */
 .contact-section {
-  margin-top: 150px;
   margin-bottom: auto;
   background: white;
   padding: 70px 25px;
@@ -426,13 +434,12 @@ textarea.form-control::-webkit-input-placeholder {
 /* ---- ABOUT ----  */
 
 .about-section {
-  margin-top: 150px;
   margin-bottom: auto;
   font-family: 'Montserrat';
   font-size: 0.7rem;
   letter-spacing: 1px;
   line-height: 1.3rem;
-  padding: 80px 25px;
+  padding: 25px;
   background: rgb(255, 255, 255);
 }
 .about-section > img {
@@ -482,7 +489,6 @@ textarea.form-control::-webkit-input-placeholder {
   background-color: #ffffff;
   min-height: 85vh;
   padding: 25px;
-  margin-top: 180px;
 }
 
 .ProjectName {
@@ -554,8 +560,6 @@ textarea.form-control::-webkit-input-placeholder {
 /* ---- PORTFOLIO RIGHT PART ----  */
 
 .right-test {
-  margin-top: 180px;
-  margin-bottom: 50px;
   min-height: 75vh;
   padding: 80px 0;
   text-align: center;
@@ -565,7 +569,7 @@ textarea.form-control::-webkit-input-placeholder {
   font-family: 'Roboto', sans-serif;
   display: inline-block;
   font-size: 0.7rem;
-  padding: 8px 0;
+  padding: 12px 0;
   font-weight: 100;
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -595,9 +599,21 @@ textarea.form-control::-webkit-input-placeholder {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  .subtitle-1 {
+    left: 130px;
+  }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .pictures-section {
+    margin-top: 2rem;
+  }
+  .subtitle-1 {
+    left: 110px;
+  }
+  .bottom-nav > .nav-item > .nav-link {
+    padding-left: 3rem;
+  }
   .main-heading {
     font-size: 7rem;
   }
@@ -650,9 +666,9 @@ textarea.form-control::-webkit-input-placeholder {
   vertical-align: middle;
 }
 
-.column img:hover {
+/* .column img:hover {
   transform: scale(1.2);
-}
+} */
 
 @media screen and (max-width: 800px) {
   .column {
