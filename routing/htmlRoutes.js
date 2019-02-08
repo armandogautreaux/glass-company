@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 var dotenv = require('dotenv');
 dotenv.config();
 
-const { EMAIL_USER, EMAIL_PASS, EMAIL_SEND } = process.env;
+const { EMAIL_USER, EMAIL_PASS, EMAIL_SEND, EMAIL_SEND2 } = process.env;
 
 //Export routes to server.js
 
@@ -16,6 +16,12 @@ module.exports = function(app) {
   });
   app.get('/contact', (req, res) => {
     res.render('contact');
+  });
+  app.get('/portfolio', (req, res) => {
+    res.render('services');
+  });
+  app.get('/services', (req, res) => {
+    res.render('services');
   });
   // If no matching route is found default to home
   app.get('*', (req, res) => {
@@ -38,7 +44,9 @@ module.exports = function(app) {
     // create reusable transporter object using the default SMTP transport
 
     let transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: 'smtp.ionos.com',
+      port: 587,
+      secure: false, // true for 465, false for other ports
       auth: {
         user: EMAIL_USER,
         pass: EMAIL_PASS
@@ -48,7 +56,7 @@ module.exports = function(app) {
     // setup email data with unicode symbols
     let mailOptions = {
       from: EMAIL_USER, // sender address
-      to: EMAIL_SEND, // list of receivers
+      to: [EMAIL_SEND, EMAIL_SEND2], // list of receivers
       subject: 'New Contact Request from your website', // Subject line
       text: 'Hello world?', // plain text body
       html: output // html body
