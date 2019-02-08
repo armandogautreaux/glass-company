@@ -161,10 +161,12 @@ a:hover {
   color: #c0b283;
 }
 .btn-primary {
-  background: #c0b283;
+  background: none;
   border: 1px solid #ffffff;
+  border-radius: 0px;
   color: rgb(255, 255, 255) !important;
   font-size: 1rem;
+  padding: 10px 20px;
 }
 .btn-primary:hover {
   background: #ffffff;
@@ -248,6 +250,12 @@ li {
   font-size: 0.8rem;
   letter-spacing: 1px;
   background: black;
+}
+
+.ul-footer-a-1-2 {
+  color: rgb(238, 238, 238);
+  font-size: 0.7rem;
+  letter-spacing: 1px;
 }
 
 .ul-footer-a {
