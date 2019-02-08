@@ -51,7 +51,7 @@ var project3 = {
     'Mirrors provide an excellent way of giving homes and businesses a unique yet exciting look. At Imperial Glass TX, we do not just sell custom mirrors, but also frame them as desired by a client. Decorative mirrors can make interior spaces appear brighter and bigger due to light reflections. We give the interior spaces of residential homes a fresh and clean look with a modern touch using any of the various mirrors we design.'
 };
 var project4 = {
-  name: 'Windowds',
+  name: 'Windows',
   imgs: [
     'public/images/gallery/mirrors/01.jpg',
     'public/images/gallery/mirrors/02.jpg',

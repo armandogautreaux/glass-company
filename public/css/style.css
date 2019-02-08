@@ -494,12 +494,13 @@ textarea.form-control::-webkit-input-placeholder {
 .ProjectName {
   color: #000000;
   margin-top: 0px;
-  font-size: 1.4rem;
+  font-size: 1rem;
 
   letter-spacing: 2px;
-  text-transform: lowercase;
-
-  font-family: baronNeue;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-weight: 500 !important;
+  font-family: 'Montserrat', sans-serif;
 }
 .text-container-inner {
   font-family: 'Montserrat', sans-serif;
