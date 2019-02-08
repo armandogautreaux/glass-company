@@ -27,22 +27,22 @@ h4 {
   width: 40px;
 }
 .navbar-brand {
-  color: #ffffff !important;
+  color: #c0b283a4 !important;
   font-family: 'Lobster Two', cursive !important;
   /* font-family: 'Lobster Two', cursive !important; */
   letter-spacing: 0.9px;
   /* text-decoration: underline; */
   font-size: 1.5rem;
-  background: #5f5f5f;
+  /* background: #5f5f5f; */
 }
 .subtitle-1 {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 7px;
   position: absolute;
   top: 57px;
-  left: 40px;
+  left: 20px;
 
-  color: #c0b283 !important;
+  color: #ffffff !important;
 }
 .font-weight-light {
   font-family: 'Lobster Two', cursive !important;
@@ -76,8 +76,18 @@ a:hover {
   margin-left: 5px;
 }
 
+.nav-top-1 > .nav-item > .nav-link > i {
+  color: #c0b283 !important;
+  font-size: 1.2rem;
+}
+.nav-top-1 > .nav-item > .nav-link > span {
+  color: #c0b283 !important;
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
 .fa-bars {
-  color: black;
+  color: #c0b283e3;
+  border: none !important;
 }
 
 .quick-access {
@@ -85,6 +95,9 @@ a:hover {
 }
 .bluebg {
   background: #c0b283;
+}
+.bluebg-1 {
+  background: #222222;
 }
 .custom-link {
   color: #ffffff;
@@ -163,9 +176,9 @@ a:hover {
 }
 
 .second-nav {
-  background: #ffffff;
-  border-bottom: 1px solid lightgray;
-  z-index: auto;
+  background: #222222;
+  /* background: #ffffff; */
+  /* border-bottom: 1px solid lightgray; */
 }
 
 #home-section {
@@ -186,7 +199,7 @@ a:hover {
   font-family: 'Cabin Condensed', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.8px;
-  color: #000000;
+  color: #c0b283e3;
   text-transform: uppercase;
 }
 .bottom-nav > .nav-item > .nav-link:hover {
@@ -434,6 +447,7 @@ textarea.form-control::-webkit-input-placeholder {
 /* ---- ABOUT ----  */
 
 .about-section {
+  margin: 40px 0;
   margin-bottom: auto;
   font-family: 'Montserrat';
   font-size: 0.7rem;
@@ -477,7 +491,7 @@ textarea.form-control::-webkit-input-placeholder {
 /* ---- PORTFOLIO----  */
 
 .portfolio {
-  /* margin-top: 30px; */
+  margin: 40px 0;
 }
 
 /* .overlay-content-section img {
@@ -601,7 +615,7 @@ textarea.form-control::-webkit-input-placeholder {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .subtitle-1 {
-    left: 130px;
+    left: 90px;
   }
 }
 /* Medium devices (tablets, 768px and up) */
@@ -609,9 +623,9 @@ textarea.form-control::-webkit-input-placeholder {
   .pictures-section {
     margin-top: 2rem;
   }
-  .subtitle-1 {
+  /* .subtitle-1 {
     left: 110px;
-  }
+  } */
   .bottom-nav > .nav-item > .nav-link {
     padding-left: 3rem;
   }
